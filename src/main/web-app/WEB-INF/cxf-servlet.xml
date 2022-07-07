@@ -1,0 +1,14 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+ 
+<!-- Configuration goes here! -->
+<jaxws:endpoint xmlns:helloworld = "http://cxfjaxws.com/"
+      id = "helloHTTP"
+      address = "http://localhost:9090/HelloServerPort"
+      serviceName = "javafirst:HelloServiceService"
+      endpointName = "javafirst:HelloServicePort">
+   </jaxws:endpoint>
+ 
+</beans>
